@@ -55,6 +55,7 @@ typings/
 .env
 .env.development
 .env.production
+.env.build
 
 # gatsby files
 .cache/
@@ -71,3 +72,4 @@ yarn-error.log
 .yarn-integrity
 
 .now
+.vercel
