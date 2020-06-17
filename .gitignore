@@ -73,3 +73,5 @@ yarn-error.log
 
 .now
 .vercel
+.github
+.vscode
