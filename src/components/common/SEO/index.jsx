@@ -1,74 +1,66 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Thumbnail from 'assets/thumbnail/thumbnail.png';
-import {
-  url,
-  defaultDescription,
-  social,
-  defaultTitle,
-  socialLinks,
-  address,
-  contact,
-  legalName,
-  foundingDate,
-  logo,
-} from 'data/config';
 
-export const SEO = ({ title = defaultTitle, description = defaultDescription, location = '' }) => {
+// Metadata from Contentful
+import contentfulMetadata from 'data/contentful-metadata'
+
+export const SEO = ({ metaData = contentfulMetadata(), title = metaData.defaultTitle, description = metaData.defaultDescription, location = '' }) => {
+
   const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
 		"@type": "Organization",
-		"legalName": "${legalName}",
-		"url": "${url}",
-		"logo": "${logo}",
-		"foundingDate": "${foundingDate}",
+		"legalName": "${metaData.legalName}",
+		"url": "${metaData.url}",
+		"logo": "${metaData.logo}",
+		"foundingDate": "${metaData.foundingDate}",
 		"founders": [{
 			"@type": "Person",
-			"name": "${legalName}"
+			"name": "${metaData.legalName}"
 		}],
 		"contactPoint": [{
 			"@type": "ContactPoint",
-			"email": "${contact.email}",
-			"telephone": "${contact.phone}",
+			"email": "${metaData.email}",
+			"telephone": "${metaData.phone}",
 			"contactType": "customer service"
 		}],
 		"address": {
 			"@type": "PostalAddress",
-			"addressLocality": "${address.city}",
-			"addressRegion": "${address.region}",
-			"addressCountry": "${address.country}",
-			"postalCode": "${address.zipCode}"
+			"addressLocality": "${metaData.city}",
+			"addressRegion": "${metaData.region}",
+			"addressCountry": "${metaData.country}",
+			"postalCode": "${metaData.zipCode}"
 		},
 		"sameAs": [
-			"${socialLinks.twitter}",
-			"${socialLinks.google}",
-			"${socialLinks.youtube}",
-			"${socialLinks.linkedin}",
-			"${socialLinks.instagram}",
-			"${socialLinks.github}"
+			"${metaData.twitter}",
+			"${metaData.google}",
+			"${metaData.youtube}",
+			"${metaData.linkedin}",
+			"${metaData.instagram}",
+			"${metaData.github}"
 		]
-  	}`;
+    }`;
 
   return (
+
     <Helmet>
       <meta name="description" content={description} />
-      <meta name="image" content={Thumbnail} />
+      <meta name="image" content={metaData.thumbnail} />
 
-      <meta property="og:url" content={`${url}${location}/?ref=smakosh.com`} />
+      <meta property="og:url" content={`${metaData.url}${location}`} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={Thumbnail} />
-      <meta property="fb:app_id" content={social.facebook} />
+      <meta property="og:image" content={metaData.thumbnail} />
+      <meta property="fb:app_id" content={metaData.facebook} />
 
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:creator" content={socialLinks.twitter} />
-      <meta name="twitter:site" content={social.twitter} />
-      <meta name="twitter:title" content={title} />
+      <meta name="twitter:creator" content={metaData.twitter} />
+      <meta name="twitter:site" content={metaData.twitter} />
+      <meta name="twitter:title" content={metaData.title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image:src" content={Thumbnail} />
+      <meta name="twitter:image:src" content={metaData.thumbnail} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
-      <link rel="publisher" href={socialLinks.google} />
+      <link rel="publisher" href={metaData.google} />
       <title>{title}</title>
       <html lang="en" dir="ltr" />
     </Helmet>

@@ -6,28 +6,26 @@ import dev from 'assets/illustrations/dev.svg';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 import { StaticQuery, graphql } from 'gatsby';
 import ReactMarkdown from 'react-markdown';
+import contentfulIntro from 'data/contentful-metadata'
 
-export const Intro = () => (
+export const Intro = ({introData = contentfulIntro()}) => (
   <Wrapper>
     <Header />
     <IntroWrapper as={Container}>
       <Details>
       <StaticQuery query={graphql`
-query Metadata {
+query Test {
   contentfulMetadata {
     defaultTitle
-    testText {
-      testText
-    }
   }
 }
       `}
       render={(data) => {
-        const { defaultTitle, testText } = data.contentfulMetadata;
+        const { defaultTitle } = data.contentfulMetadata;
         return (
           <div justifyContent="center">
             <ReactMarkdown
-              source={testText}
+              source={introData}
               />
             <h1>Hi There!</h1>
             <h4>I’m Dedas and I’m a JAMStack engineer!</h4>
