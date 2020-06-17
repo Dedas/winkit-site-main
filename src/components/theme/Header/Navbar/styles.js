@@ -10,3 +10,22 @@ export const Wrapper = styled.div`
     color: #212121;
   }
 `;
+
+export const Link = styled.div`
+  a {
+    flex: auto;
+  }
+`;
+
+export const Logo = styled.div`
+  display: flex;
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+
+  img {
+    width: 60%;
+    margin-bottom: 0px;
+  }
+`;

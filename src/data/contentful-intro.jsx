@@ -10,6 +10,13 @@ const contentfulIntro = () => {
           text {
             text
           }
+          button
+          thumbnail {
+            file {
+              url
+            }
+          }
+          thumbnailAlt
         }
       }
     }   
