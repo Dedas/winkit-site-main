@@ -8,9 +8,9 @@ import contentfulNavbar from 'data/contentful-navbar';
 const Navbar = ({navbarData = contentfulNavbar()}) => (
   <Wrapper as={Container}>
     <Link to="/" >
-    <Logo>
-      <img src={navbarData.logo.file.url} />
-    </Logo>
+      <Logo>
+        <img src={navbarData.logo.file.url} />
+      </Logo>
     </Link>
     <Link style = {{flex: "auto"}} to="/">{navbarData.title}</Link>
     <NavbarLinks desktop />

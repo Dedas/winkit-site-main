@@ -11,12 +11,6 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Link = styled.div`
-  a {
-    flex: auto;
-  }
-`;
-
 export const Logo = styled.div`
   display: flex;
 
