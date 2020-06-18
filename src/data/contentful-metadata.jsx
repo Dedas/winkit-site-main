@@ -20,13 +20,6 @@ const contentfulMetadata = () => {
           themeColor
           backgroundColor
           foundingDate
-          facebook
-          twitter
-          google
-          youtube
-          linkedin
-          instagram
-          github
           city
           region
           country
