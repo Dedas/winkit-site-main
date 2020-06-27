@@ -1,25 +1,24 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-const contentfulSocial = () => {
+export const contentfulSocial = () => {
   const { allContentfulSocial } = useStaticQuery(
     graphql`
-    query allContentfulSocial {
-      allContentfulSocial(filter: {order: {ne: 0}}) {
-        nodes {
-          order
-          name
-          url
-          logo {
-            file {
-              url
+    query SocialData {
+      allContentfulSocial(filter: {name: {ne: "default"}}, sort: {fields: order}) {
+        edges {
+          node {
+            name
+            url
+            logo {
+              file {
+                url
+              }
             }
           }
         }
       }
-    }   
+    }
     `
   )
-  return allContentfulSocial.nodes[0]
+  return allContentfulSocial
 }
-
-export default contentfulSocial

@@ -1,11 +1,10 @@
 import React from 'react';
 import { Container } from 'components/common';
 import { Wrapper, Flex, Links, Details } from './styles';
-import social from './social.json';
 import contentfulMetadata from 'data/contentful-metadata';
-import contentfulMetadataSocial from 'data/contentful-social';
+import { contentfulSocial } from 'data/contentful-social';
 
-export const Footer = ({metaData = contentfulMetadata(), metaDataSocial = contentfulMetadataSocial()}) => (
+export const Footer = ({ metaData = contentfulMetadata(), socialData = contentfulSocial(), temp = socialData.length }) => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
@@ -18,12 +17,13 @@ export const Footer = ({metaData = contentfulMetadata(), metaDataSocial = conten
         </span>
       </Details>
       <Links>
-      {console.log(metaDataSocial)}
-        {social.map(({ id, name, link, icon }) => (
-          <a key={id} href={link} target="_blank" rel="noopener noreferrer" aria-label={`follow me on ${name}`}>
-            <img width="24" src={icon} alt={name} />
-          </a>
-        ))}
+        {socialData.edges.map(edge => {
+          return (
+            <a key={edge.node.name} href={edge.node.url} target="_blank" rel="noopener noreferrer" aria-label={`follow me on ${edge.node.name}`}>
+              <img width="24" src={edge.node.logo.file.url} alt={edge.node.name} />
+            </a>
+          )}
+        )}  
       </Links>
     </Flex>
   </Wrapper>

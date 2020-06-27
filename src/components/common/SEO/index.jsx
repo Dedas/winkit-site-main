@@ -3,9 +3,9 @@ import Helmet from 'react-helmet';
 
 // Metadata from Contentful
 import contentfulMetadata from 'data/contentful-metadata'
-import contentfulSocial from 'data/contentful-social'
+import { contentfulSocial } from 'data/contentful-social'
 
-export const SEO = ({ metaData = contentfulMetadata(), socialData = contentfulSocial(), title = metaData.defaultTitle, description = metaData.defaultDescription, location = '' }) => {
+export const SEO = ({ metaData = contentfulMetadata(), title = metaData.defaultTitle, description = metaData.defaultDescription, location = '' }) => {
 
   const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
@@ -32,12 +32,7 @@ export const SEO = ({ metaData = contentfulMetadata(), socialData = contentfulSo
 			"postalCode": "${metaData.zipCode}"
 		},
 		"sameAs": [
-			"${socialData.twitter}",
-			"${socialData.google}",
-			"${socialData.youtube}",
-			"${socialData.linkedin}",
-			"${socialData.instagram}",
-			"${socialData.github}"
+			"${contentfulSocial.title}"
 		]
     }`;
 
@@ -52,16 +47,12 @@ export const SEO = ({ metaData = contentfulMetadata(), socialData = contentfulSo
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={metaData.thumbnail} />
-      <meta property="fb:app_id" content={metaDataSocial.facebook} />
 
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:creator" content={metaDataSocial.twitter} />
-      <meta name="twitter:site" content={metaDataSocial.twitter} />
       <meta name="twitter:title" content={metaData.title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image:src" content={metaData.thumbnail} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
-      <link rel="publisher" href={metaDataSocial.google} />
       <title>{title}</title>
       <html lang="en" dir="ltr" />
     </Helmet>

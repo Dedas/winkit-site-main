@@ -75,3 +75,6 @@ yarn-error.log
 .vercel
 .github
 .vscode
+
+#Misc assets
+media
