@@ -1,18 +1,17 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Container } from 'components/common';
+import { ContainerNavbar } from 'components/common';
 import NavbarLinks from '../NavbarLinks';
 import { Wrapper, Logo } from './styles';
-import contentfulNavbar from 'data/contentful-navbar';
+import { contentfulNavbar } from 'data/contentful-navbar';
 
-const Navbar = ({navbarData = contentfulNavbar()}) => (
-  <Wrapper as={Container}>
+const Navbar = ({navbarData = contentfulNavbar(), sticky}) => (
+  <Wrapper className={sticky ? "sticky" : "notsticky"} as={ContainerNavbar}>
     <Link to="/" >
-      <Logo>
-        <img src={navbarData.logo.file.url} />
-      </Logo>
+       <Logo>
+       {sticky ?  <img src={navbarData.logo.file.url} /> : null}
+      </Logo> 
     </Link>
-    <Link style = {{flex: "auto"}} to="/">{navbarData.title}</Link>
     <NavbarLinks desktop />
   </Wrapper>
 );

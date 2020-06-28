@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'components/common';
 import { Wrapper, Flex, Links, Details } from './styles';
-import contentfulMetadata from 'data/contentful-metadata';
+import { contentfulMetadata } from 'data/contentful-metadata';
 import { contentfulSocial } from 'data/contentful-social';
 
 export const Footer = ({ metaData = contentfulMetadata(), socialData = contentfulSocial(), temp = socialData.length }) => (

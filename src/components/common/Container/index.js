@@ -13,3 +13,21 @@ export const Container = styled.div`
     width: 80%;
   }
 `;
+
+export const ContainerNavbar = styled.div`
+  margin: 0em auto 0em auto;
+
+  width: 90%;
+
+  @media (min-width: 601px) {
+    width: 90%;
+  }
+
+  @media (min-width: 993px) {
+    width: 90%;
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+`;

@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-const contentfulMetadata = () => {
+export const contentfulMetadata = () => {
   const { allContentfulMetadata } = useStaticQuery(
     graphql`
     query Metadata {
@@ -26,6 +26,12 @@ const contentfulMetadata = () => {
           zipCode
           email
           phone
+          twitter
+          google
+          youtube
+          linkedIn
+          instagram
+          gitHub
         }
       }
     }    
@@ -33,5 +39,3 @@ const contentfulMetadata = () => {
   )
   return allContentfulMetadata.nodes[0]
 }
-
-export default contentfulMetadata

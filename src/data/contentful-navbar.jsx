@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-const contentfulNavbar = () => {
+export const contentfulNavbar = () => {
   const { allContentfulNavbar } = useStaticQuery(
     graphql`
     query Navbar {
@@ -20,5 +20,3 @@ const contentfulNavbar = () => {
   )
   return allContentfulNavbar.nodes[0]
 }
-
-export default contentfulNavbar
