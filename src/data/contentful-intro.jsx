@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-const contentfulIntro = () => {
+export const contentfulIntro = () => {
   const { allContentfulIntro } = useStaticQuery(
     graphql`
     query Intro {
@@ -24,5 +24,3 @@ const contentfulIntro = () => {
   )
   return allContentfulIntro.nodes[0]
 }
-
-export default contentfulIntro

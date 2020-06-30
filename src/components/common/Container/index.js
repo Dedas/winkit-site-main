@@ -17,14 +17,14 @@ export const Container = styled.div`
 export const ContainerNavbar = styled.div`
   margin: 0em auto 0em auto;
 
-  width: 90%;
+  width: 100%;
 
   @media (min-width: 601px) {
-    width: 90%;
+    width: 100%;
   }
 
   @media (min-width: 993px) {
-    width: 90%;
+    width: 100%;
   }
 
   h3 {

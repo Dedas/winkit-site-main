@@ -3,13 +3,12 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
-import contentfulIntro from 'data/contentful-intro';
-import useSticky from 'hooks/useSticky.js';
+import { contentfulIntro } from 'data/contentful-intro';
 
-export const Intro = ({introData = contentfulIntro()}, { isSticky, element } = useSticky()) => (
+export const Intro = ({introData = contentfulIntro()}) => (
   <Wrapper>
     <Header />
-    <IntroWrapper as={Container} element={element}>
+    <IntroWrapper as={Container}>
       <Details>
         <h1>{introData.title}</h1>
         <h4>{introData.text.text}</h4>
