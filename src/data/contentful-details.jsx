@@ -1,19 +1,25 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
 export const contentfulDetails = () => {
-  const { allContentfulDetails } = useStaticQuery(
+  const { allContentfulContent } = useStaticQuery(
     graphql`
     query Details {
-        allContentfulDetails(filter: {title: {ne: "default"}}) {
+        allContentfulContent(filter: {name: {in: "Details"}}) {
           nodes {
             title
             text {
               text
             }
+            thumbnail {
+              file {
+                url
+              }
+            }
+            thumbnailAlt
           }
         }
-      } 
+      }
     `
   )
-  return allContentfulDetails.nodes[0]
+  return allContentfulContent.nodes[0]
 }

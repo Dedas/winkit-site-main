@@ -1,18 +1,23 @@
 import React from 'react';
 import { Container } from 'components/common';
 import { Wrapper, Flex, Links, Details } from './styles';
-import { contentfulMetadata } from 'data/contentful-metadata';
+import {
+  defaultTitle,
+  author,
+  contact,
+  url
+} from 'data/config';
 import { contentfulSocial } from 'data/contentful-social';
 
-export const Footer = ({ metaData = contentfulMetadata(), socialData = contentfulSocial(), temp = socialData.length }) => (
+export const Footer = ({ socialData = contentfulSocial() }) => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
-        <h2>{metaData.defaultTitle}</h2>
+        <h2>{defaultTitle}</h2>
         <span>
           © All rights are reserved | {new Date().getFullYear()} | Made by {" "}
-          <a href="winkit.se">
-            {metaData.legalName}
+          <a href={"mailto:" + contact.email}>
+            {author}
           </a>
         </span>
       </Details>

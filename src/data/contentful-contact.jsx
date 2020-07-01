@@ -1,20 +1,12 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-export const contentfulIntro = () => {
+export const contentfulContact = () => {
   const { allContentfulContent } = useStaticQuery(
     graphql`
-    query Intro {
-      allContentfulContent(filter: {name: {in: "Intro"}}) {
+    query Contact {
+      allContentfulContent(filter: {name: {in: "Contact"}}) {
         nodes {
-          title
-          text {
-            text
-          }
-          button
           thumbnail {
-            svg {
-              content
-            }
             file {
               url
             }

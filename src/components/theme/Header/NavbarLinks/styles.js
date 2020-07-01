@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  margin-right:3rem;
+  margin-right:2rem;
 
   a {
     color: #6d6d6d;

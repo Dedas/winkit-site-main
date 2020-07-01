@@ -47,11 +47,12 @@ export const Thumbnail = styled.div`
   flex: 1;
 
   @media (max-width: 960px) {
-    width: 100%;
+    width: 75%;
+    text-align: center;
     margin-bottom: 2rem;
   }
 
   img {
-    width: 100%;
+    width: 75%;
   }
 `;

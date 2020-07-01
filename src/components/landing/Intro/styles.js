@@ -52,8 +52,10 @@ export const Details = styled.div`
 
 export const Thumbnail = styled.div`
   flex: 1;
+  margin-top: 2rem;
 
   @media (max-width: 960px) {
+    text-align: center;
     width: 100%;
   }
 
