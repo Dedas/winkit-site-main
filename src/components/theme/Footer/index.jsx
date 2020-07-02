@@ -5,7 +5,6 @@ import {
   defaultTitle,
   author,
   contact,
-  url
 } from 'data/config';
 import { contentfulSocial } from 'data/contentful-social';
 

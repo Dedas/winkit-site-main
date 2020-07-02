@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container } from 'components/common';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
-import { contentfulDetails } from 'data/contentful-details';
+import { contentfulSegment } from 'data/contentful-segment';
 
-export const Skills = ({detailsData = contentfulDetails()}) => (
+export const Skills = ({detailsData = contentfulSegment(3)}) => (
   <Wrapper id="about">
     <SkillsWrapper as={Container}>
       <Thumbnail>

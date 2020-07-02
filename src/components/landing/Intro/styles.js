@@ -1,9 +1,9 @@
+import { contentfulBackground } from 'data/contentful-segment';
 import styled from 'styled-components';
-import overlayIllustration from 'assets/illustrations/overlay.svg';
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
-  background-image: url(${overlayIllustration});
+  background-image: url(${() => contentfulBackground(2)});
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;

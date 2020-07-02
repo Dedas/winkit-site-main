@@ -2,9 +2,9 @@ import React from 'react';
 import { Container } from 'components/common';
 import { Wrapper, Details, Thumbnail } from './styles';
 import ContactForm from './ContactForm';
-import { contentfulContact } from 'data/contentful-contact';
+import { contentfulSegment } from 'data/contentful-segment';
 
-export const Contact = ({contactData = contentfulContact()}) => (
+export const Contact = ({contactData = contentfulSegment(4)}) => (
   <Wrapper as={Container} id="contact">
     <Details>
       <ContactForm />

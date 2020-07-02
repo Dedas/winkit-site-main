@@ -1,3 +1,4 @@
+import { contentfulBackground } from 'data/contentful-segment';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
@@ -5,6 +6,12 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  padding-bottom: 4rem;
+  background-image: url(${() => contentfulBackground(4)});
+  background-size: contain;
+  background-position: right top;
+  background-repeat: no-repeat;
 
   @media (max-width: 960px) {
     flex-direction: column;

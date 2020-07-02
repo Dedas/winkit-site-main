@@ -3,9 +3,9 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
-import { contentfulIntro } from 'data/contentful-intro';
+import { contentfulSegment } from 'data/contentful-segment';
 
-export const Intro = ({introData = contentfulIntro()}) => (
+export const Intro = ({introData = contentfulSegment(2)}) => (
   <Wrapper>
     <Header />
     <IntroWrapper as={Container}>

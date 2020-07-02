@@ -1,9 +1,10 @@
-import footerIllustration from 'assets/illustrations/footer.svg';
+import { contentfulBackground } from 'data/contentful-segment';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 28rem 0 4rem 0;
-  background-image: url(${footerIllustration});
+
+  background-image: url(${() => contentfulBackground(5)});
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
