@@ -10,7 +10,8 @@ export const Intro = ({introData = contentfulSegment(2)}) => (
     <Header />
     <IntroWrapper as={Container}>
       <Details>
-        <h1>{introData.title}</h1>
+        <h1>Hello! :)</h1>
+        <h1>I'm {introData.title}</h1>
         <h4>{introData.text.text}</h4>
         <Button as={AnchorLink} href="#contact">{introData.button}</Button>
       </Details>

@@ -2,12 +2,11 @@ import { contentfulBackground } from 'data/contentful-segment';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 4rem 0;
+  padding: 2rem 0rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding-bottom: 4rem;
   background-image: url(${() => contentfulBackground(4)});
   background-size: contain;
   background-position: right top;
@@ -15,6 +14,7 @@ export const Wrapper = styled.div`
 
   @media (max-width: 960px) {
     flex-direction: column;
+    padding-bottom: 0rem;
   }
 `;
 

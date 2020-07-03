@@ -2,6 +2,7 @@ import { contentfulBackground } from 'data/contentful-segment';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  padding: 2rem 0rem;
   background-image: url(${() => contentfulBackground(3)});
   background-size: contain;
   background-position: left top;

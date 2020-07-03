@@ -45,8 +45,19 @@ export const Links = styled.div`
 `;
 
 export const Details = styled.div`
+  .mobile {
+    display: none;
+  }
+
   @media (max-width: 680px) {
     margin-bottom: 2rem;
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
+      display:block;
+    }
   }
 
   a {

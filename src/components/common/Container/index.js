@@ -26,8 +26,4 @@ export const ContainerNavbar = styled.div`
   @media (min-width: 993px) {
     width: 100%;
   }
-
-  h3 {
-    margin-bottom: 0;
-  }
 `;

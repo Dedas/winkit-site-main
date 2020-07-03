@@ -2,11 +2,17 @@ import { contentfulBackground } from 'data/contentful-segment';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   background-image: url(${() => contentfulBackground(2)});
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
+
+  @media (max-width: 960px) {
+    padding-bottom: 0rem;
+    background-size: cover;
+    background-position: top;
+  }
 `;
 
 export const IntroWrapper = styled.div`
@@ -38,8 +44,12 @@ export const Details = styled.div`
     }
   }
 
+  h1:nth-child(1) {
+    margin-bottom: 1rem;
+  }
+
   h4 {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.7rem;
     font-size: 32pt;
     font-weight: normal;
     color: #707070;

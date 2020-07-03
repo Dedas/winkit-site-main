@@ -13,11 +13,13 @@ export const Footer = ({ socialData = contentfulSocial() }) => (
     <Flex as={Container}>
       <Details>
         <h2>{defaultTitle}</h2>
-        <span>
+        <span className="desktop">
           © All rights are reserved | {new Date().getFullYear()} | Made by {" "}
-          <a href={"mailto:" + contact.email}>
-            {author}
-          </a>
+          <a href={"mailto:" + contact.email}>{author}</a>
+        </span>
+        <span className="mobile">
+          © All rights are reserved | {new Date().getFullYear()} <br/> Made by {" "}
+          <a href={"mailto:" + contact.email}>{author}</a>
         </span>
       </Details>
       <Links>
