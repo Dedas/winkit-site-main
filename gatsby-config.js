@@ -72,7 +72,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    `gatsby-transformer-inline-svg`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
