@@ -18,11 +18,9 @@ const stickyStyleCSS = {
 export const Navbar = ({navbarData = contentfulNavbar()}) => (
   <Sticky stickyStyle={stickyStyleCSS}>
     <Wrapper as={ContainerNavbar}>
-      <Link to="/" >
         <Logo>
           <AnchorLink href="#intro"><img src={navbarData.logo.file.url} /></AnchorLink>
         </Logo> 
-      </Link>
       <NavbarLinks desktop />
     </Wrapper>
   </Sticky>
