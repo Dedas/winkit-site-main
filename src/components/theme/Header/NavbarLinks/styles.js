@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   margin-right:2rem;
   font-size: 1.38316rem;
   color: #212121;
-  font-weight: bold;
+  font-weight: normal;
 
   a {
     text-decoration: none;

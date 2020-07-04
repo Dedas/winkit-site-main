@@ -6,7 +6,7 @@ import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 import { contentfulSegment } from 'data/contentful-segment';
 
 export const Intro = ({introData = contentfulSegment(2)}) => (
-  <Wrapper>
+  <Wrapper id="intro">
     <Header />
     <IntroWrapper as={Container}>
       <Details>

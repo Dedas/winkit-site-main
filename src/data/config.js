@@ -1,6 +1,6 @@
 module.exports = {
   defaultTitle: 'Winkit',
-  logo: './media/favicons/favicon-96x96.png',
+  logo: './static/favicons/favicon-96x96.png',
   author: 'Andreas Winkler',
   url: 'https://winkit.se',
   legalName: 'Winkit',

@@ -5,6 +5,7 @@ import NavbarLinks from '../NavbarLinks';
 import { Wrapper, Logo } from './styles';
 import { contentfulNavbar } from 'data/contentful-navbar';
 import Sticky from 'react-sticky-el';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const stickyStyleCSS = {
   background: "white",
@@ -19,7 +20,7 @@ export const Navbar = ({navbarData = contentfulNavbar()}) => (
     <Wrapper as={ContainerNavbar}>
       <Link to="/" >
         <Logo>
-            <img src={navbarData.logo.file.url} />
+          <AnchorLink href="#intro"><img src={navbarData.logo.file.url} /></AnchorLink>
         </Logo> 
       </Link>
       <NavbarLinks desktop />
