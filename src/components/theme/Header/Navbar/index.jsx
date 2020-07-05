@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { ContainerNavbar } from 'components/common';
 import NavbarLinks from '../NavbarLinks';
 import { Wrapper, Logo } from './styles';
@@ -8,10 +7,11 @@ import Sticky from 'react-sticky-el';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const stickyStyleCSS = {
-  background: "white",
+  background: "#ffffff",
   borderBottom: "solid",
   borderWidth: "thin",
-  borderColor: "lightgray",
+  borderColor: "#ffffff",
+  boxShadow: "0 1px 6px 0 rgba(0, 0, 0, 0.11)",
   zIndex: 3
 };
 

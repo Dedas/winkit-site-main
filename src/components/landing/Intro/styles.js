@@ -9,7 +9,6 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
 
   @media (max-width: 960px) {
-    padding-bottom: 0rem;
     background-size: cover;
     background-position: top;
   }
@@ -35,7 +34,7 @@ export const Details = styled.div`
   }
 
   h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 36pt;
     color: #212121;
 

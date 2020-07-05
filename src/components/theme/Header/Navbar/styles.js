@@ -29,4 +29,8 @@ export const Logo = styled.div`
     width: 65%;
     margin-bottom: 0em;
   }
+
+  a {
+    display: inline-flex;
+  }
 `;
