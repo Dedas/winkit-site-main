@@ -1,6 +1,6 @@
 module.exports = {
   defaultTitle: 'Winkit',
-  logo: './static/favicons/favicon-96x96.png',
+  logo: './static/favicon.png',
   author: 'Andreas Winkler',
   url: 'https://winkit.se',
   legalName: 'Winkit',
@@ -31,5 +31,6 @@ module.exports = {
     phone: '+46707229491',
   },
   foundingDate: '2020',
+  contentfulSpaceId: 'qqg8xpr0nyrn'
 }
 
