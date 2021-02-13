@@ -2,7 +2,8 @@ import React from 'react';
 import { Layout, SEO } from 'components/common';
 import { Intro, Skills, Contact, Projects } from 'components/landing';
 
-export default () => (
+const Index = () => {
+  return (
   <Layout>
     <SEO />
     <Intro />
@@ -10,4 +11,5 @@ export default () => (
     <Skills />
     <Contact />
   </Layout>
-);
+  )}
+export default Index;
