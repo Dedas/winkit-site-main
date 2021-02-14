@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+//TODO Fix automatic thumbnail generation
 import Thumbnail from 'assets/thumbnail/thumbnail.png';
 import {
   url,

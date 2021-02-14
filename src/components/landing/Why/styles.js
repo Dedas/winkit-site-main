@@ -3,13 +3,13 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 2rem 0rem;
-  background-image: url(${() => contentfulBackground(3)});
+  background-image: url(${() => contentfulBackground(4)});
   background-size: contain;
   background-position: left top;
   background-repeat: no-repeat;
 `;
 
-export const SkillsWrapper = styled.div`
+export const DetailsWrapper = styled.div`
   padding: 4rem 0;
   display: flex;
   align-items: center;
@@ -20,9 +20,8 @@ export const SkillsWrapper = styled.div`
   }
 `;
 
-export const Details = styled.div`
+export const Text = styled.div`
   flex: 1;
-  padding-left: 2rem;
 
   @media (max-width: 960px) {
     padding-left: unset;
@@ -46,7 +45,8 @@ export const Details = styled.div`
 
 export const Thumbnail = styled.div`
   flex: 1;
-
+  text-align: center;
+  
   @media (max-width: 960px) {
     width: 75%;
     text-align: center;
@@ -54,6 +54,6 @@ export const Thumbnail = styled.div`
   }
 
   img {
-    width: 75%;
+    width: 65%;
   }
 `;

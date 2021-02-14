@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, SEO } from 'components/common';
-import { Intro, Skills, Contact, Projects } from 'components/landing';
+import { Intro, Who, Why, Contact, Projects } from 'components/landing';
 
 const Index = () => {
   return (
@@ -8,7 +8,8 @@ const Index = () => {
     <SEO />
     <Intro />
     <Projects />
-    <Skills />
+    <Who />
+    <Why />
     <Contact />
   </Layout>
   )}

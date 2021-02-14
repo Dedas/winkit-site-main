@@ -10,8 +10,8 @@ export const contentfulSegment = (value) => {
             order
             name
             title
-            text {
-              text
+            content {
+              raw
             }
             button
             thumbnail {

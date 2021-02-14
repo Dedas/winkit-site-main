@@ -6,7 +6,7 @@ module.exports = {
   legalName: 'Winkit',
   defaultDescription: 'System science student',
   socialLinks: {
-    twitter: '',
+    twitter: 'https://twitter.com/Dedasenen',
     github: 'https://github.com/Dedas',
     linkedin: 'https://www.linkedin.com/in/andreas-winkler-970335107/',
     instagram: 'https://www.instagram.com/dedasen/',
