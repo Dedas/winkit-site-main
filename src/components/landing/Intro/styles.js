@@ -59,6 +59,12 @@ export const Details = styled.div`
   }
 `;
 
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+`;
+
 export const Thumbnail = styled.div`
   flex: 1;
   margin-top: 2rem;

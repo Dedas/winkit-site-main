@@ -12,7 +12,7 @@ export const Why = ({whyData = contentfulSegment(4)}) => (
     </Thumbnail>
     <Text>
       <h1>{whyData.title}</h1>
-      <p>{documentToReactComponents(JSON.parse(whyData.content.raw))}</p>
+      <div>{documentToReactComponents(JSON.parse(whyData.content.raw))}</div>
     </Text>
     </DetailsWrapper>
   </Wrapper>

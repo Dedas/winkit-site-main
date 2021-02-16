@@ -13,7 +13,8 @@ export const contentfulSegment = (value) => {
             content {
               raw
             }
-            button
+            button1
+            button2
             thumbnail {
               file {
                 url

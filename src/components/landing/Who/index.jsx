@@ -9,7 +9,7 @@ export const Who = ({whoData = contentfulSegment(3)}) => (
     <DetailsWrapper as={Container}>
       <Text>
         <h1>{whoData.title}</h1>
-        <p>{documentToReactComponents(JSON.parse(whoData.content.raw))}</p>
+        <div>{documentToReactComponents(JSON.parse(whoData.content.raw))}</div>
       </Text>
       <Thumbnail>
         <img src={whoData.thumbnail.file.url} alt={whoData.thumbnailAlt} />
