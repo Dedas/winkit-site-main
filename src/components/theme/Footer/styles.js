@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   padding: 28rem 0 4rem 0;
 
-  background-image: url(${() => contentfulBackground(6)});
+  background-image: url(${() => contentfulBackground(7)});
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;

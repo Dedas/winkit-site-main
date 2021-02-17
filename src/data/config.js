@@ -4,9 +4,9 @@ module.exports = {
   author: 'Andreas Winkler',
   url: 'https://winkit.se',
   legalName: 'Winkit',
-  defaultDescription: 'System science student',
+  defaultDescription: 'Information Systems student and Software Developer',
   socialLinks: {
-    twitter: 'https://twitter.com/Dedasenen',
+    twitter: 'https://twitter.com/winkit9',
     github: 'https://github.com/Dedas',
     linkedin: 'https://www.linkedin.com/in/andreas-winkler-970335107/',
     instagram: 'https://www.instagram.com/dedasen/',
@@ -18,7 +18,7 @@ module.exports = {
   backgroundColor: '#6b63ff',
   social: {
     facebook: 'appId',
-    twitter: '@dedasenen',
+    twitter: '@winkit9',
   },
   address: {
     city: 'Göteborg',

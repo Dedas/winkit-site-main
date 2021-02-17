@@ -4,16 +4,16 @@ import { Wrapper, DetailsWrapper, Text, Thumbnail } from './styles';
 import { contentfulSegment } from 'data/contentful-segment';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-export const Why = ({whyData = contentfulSegment(4)}) => (
-  <Wrapper id="why">
+export const About = ({aboutData = contentfulSegment(6)}) => (
+  <Wrapper id="about">
     <DetailsWrapper as={Container}>
       <Text>
-        <h1>{whyData.title}</h1>
-        <h3>{whyData.subTitle}</h3>
-        <div>{documentToReactComponents(JSON.parse(whyData.content.raw))}</div>
+        <h1>{aboutData.title}</h1>
+        <h3>{aboutData.subTitle}</h3>
+        <div>{documentToReactComponents(JSON.parse(aboutData.content.raw))}</div>
       </Text>
       <Thumbnail>
-          <img src={whyData.thumbnail.file.url} alt={whyData.thumbnailAlt} />
+        <img src={aboutData.thumbnail.file.url} alt={aboutData.thumbnailAlt} />
       </Thumbnail>
     </DetailsWrapper>
   </Wrapper>

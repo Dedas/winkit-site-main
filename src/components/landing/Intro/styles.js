@@ -51,7 +51,7 @@ export const Details = styled.div`
     margin-bottom: 2.7rem;
     font-size: 32pt;
     font-weight: normal;
-    color: #707070;
+    color: #474747;
 
     @media (max-width: 680px) {
       font-size: 26pt;

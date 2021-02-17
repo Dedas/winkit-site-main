@@ -29,16 +29,20 @@ export const Details = styled.div`
   }
 
   h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.45rem;
     font-size: 26pt;
     color: #212121;
   }
 
+  h3 {
+    color: #474747;
+  }
+
   p {
-    font-size: 20pt;
+    font-size: 1.2rem;
     font-weight: normal;
     line-height: 1.3;
-    color: #707070;
+    color: #474747;
   }
 `;
 
@@ -51,16 +55,20 @@ export const Text = styled.div`
   }
 
   h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.45rem;
     font-size: 26pt;
     color: #212121;
   }
 
+  h3 {
+    color: #474747;
+  }
+
   p {
-    font-size: 20pt;
+    font-size: 1.2rem;
     font-weight: normal;
     line-height: 1.3;
-    color: #707070;
+    color: #474747;
   }
 `;
 
@@ -81,4 +89,10 @@ export const Thumbnail = styled.div`
 
 export const AvatarExtended = styled(Avatar)`
   margin-bottom: 1rem;
+
+  @media (max-width: 960px) {
+    width: 75% !important;
+    height: 75% !important;
+    margin-bottom: 0.5rem;
+  }
 `;

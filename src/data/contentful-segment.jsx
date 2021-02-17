@@ -10,6 +10,7 @@ export const contentfulSegment = (value) => {
             order
             name
             title
+            subTitle
             content {
               raw
             }

@@ -9,12 +9,13 @@ export const Contact = ({contactData = contentfulSegment(5)}, {imageData = conte
   <Wrapper as={Container} id="contact">
     <Details>
       <h1>{contactData.title}</h1>
+      <h3>{contactData.subTitle}</h3>
       <ContactForm />
     </Details>
     <Thumbnail>
       <AvatarExtended name="Andreas Winkler" size="200px" src={imageData.image.file.url} round={true} alt="Andreas Winkler" />
         <Text>
-          <h3>Andreas Winkler</h3>
+          <h3>Andreas Winkler<br></br>Software developer</h3>
         </Text> 
     </Thumbnail>
   </Wrapper>

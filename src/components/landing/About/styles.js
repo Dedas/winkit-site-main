@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 2rem 0rem;
-  background-image: url(${() => contentfulBackground(4)});
+  /* background-image: url(${() => contentfulBackground()}); */
   background-size: contain;
   background-position: left top;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@ export const DetailsWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row-reverse;
+  flex-direction: column;
 
   @media (max-width: 960px) {
     flex-direction: column-reverse;
@@ -24,6 +24,7 @@ export const DetailsWrapper = styled.div`
 
 export const Text = styled.div`
   flex: 1;
+  text-align: center;
 
   @media (max-width: 960px) {
     padding-left: unset;
@@ -46,6 +47,10 @@ export const Text = styled.div`
     line-height: 1.3;
     color: #474747;
   }
+
+  a {
+    color: #0074d9;
+  }
 `;
 
 export const Thumbnail = styled.div`
@@ -53,12 +58,11 @@ export const Thumbnail = styled.div`
   text-align: center;
   
   @media (max-width: 960px) {
-    width: 75%;
     text-align: center;
     margin-bottom: 2rem;
   }
 
   img {
-    width: 55%;
+    width: 35%;
   }
 `;

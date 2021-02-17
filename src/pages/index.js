@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, SEO } from 'components/common';
-import { Intro, Who, Why, Contact, Projects } from 'components/landing';
+import { Intro, Who, Why, Contact, Projects, About } from 'components/landing';
 
 const Index = () => {
   return (
@@ -11,6 +11,7 @@ const Index = () => {
     <Who />
     <Why />
     <Contact />
+    <About />
   </Layout>
   )}
 export default Index;

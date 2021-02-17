@@ -1,7 +1,14 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+
+  h3 {
+    color: #474747;
+  }
 `;
 
 export const Grid = styled.div`
@@ -31,7 +38,7 @@ export const Item = styled.div`
   }
 
   p {
-    color: #707070;
+    color: #474747;
   }
 `;
 
