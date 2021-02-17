@@ -1,14 +1,13 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import DownloadLink from 'react-download-link';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
 import { Wrapper, IntroWrapper, Details, ButtonWrapper, Thumbnail } from './styles';
 import { contentfulSegment } from 'data/contentful-segment';
-import { contentfulImageData } from 'data/contentful-imagedata';
+import { contentfulImageDataCV } from 'data/contentful-imagedata-cv';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-export const Intro = ({introData = contentfulSegment(2)}, {imageData = contentfulImageData()}) => (
+export const Intro = ({introData = contentfulSegment(2)}, {imageData = contentfulImageDataCV()}) => (
   <Wrapper id="intro">
     <Header />
     <IntroWrapper as={Container}>

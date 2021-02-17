@@ -1,9 +1,9 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-export const contentfulImageData = () => {
+export const contentfulImageDataCV = () => {
   const { allContentfulImageData } = useStaticQuery(
     graphql`
-    query ImageData {
+    query ImageDataCV {
       allContentfulImageData(filter: {name: {eq: "CV"}}) {
         edges {
           node {

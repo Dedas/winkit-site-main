@@ -35,7 +35,6 @@ export const Text = styled.div`
   }
 
   p {
-    margin-bottom: 2.5rem;
     font-size: 20pt;
     font-weight: normal;
     line-height: 1.3;
@@ -57,3 +56,4 @@ export const Thumbnail = styled.div`
     width: 75%;
   }
 `;
+

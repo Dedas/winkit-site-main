@@ -1,17 +1,21 @@
 import React from 'react';
 import { Container } from 'components/common';
-import { Wrapper, Details, Thumbnail, Text } from './styles';
+import { Wrapper, Details, Thumbnail, Text, AvatarExtended } from './styles';
 import ContactForm from './ContactForm';
 import { contentfulSegment } from 'data/contentful-segment';
+import { contentfulImageDataAvatar } from 'data/contentful-imagedata-avatar';
 
-export const Contact = ({contactData = contentfulSegment(5)}) => (
+export const Contact = ({contactData = contentfulSegment(5)}, {imageData = contentfulImageDataAvatar()}) => (
   <Wrapper as={Container} id="contact">
     <Details>
       <h1>{contactData.title}</h1>
       <ContactForm />
     </Details>
     <Thumbnail>
-      <img src={contactData.thumbnail.file.url} alt={contactData.thumbnailAlt} />
+      <AvatarExtended name="Andreas Winkler" size="200px" src={imageData.image.file.url} round={true} alt="Andreas Winkler" />
+        <Text>
+          <h3>Andreas Winkler</h3>
+        </Text> 
     </Thumbnail>
   </Wrapper>
 );

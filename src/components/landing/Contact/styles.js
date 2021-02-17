@@ -1,5 +1,6 @@
 import { contentfulBackground } from 'data/contentful-segment';
 import styled from 'styled-components';
+import Avatar from 'react-avatar';
 
 export const Wrapper = styled.div`
   padding: 2rem 0rem;
@@ -34,7 +35,6 @@ export const Details = styled.div`
   }
 
   p {
-    margin-bottom: 2.5rem;
     font-size: 20pt;
     font-weight: normal;
     line-height: 1.3;
@@ -57,7 +57,6 @@ export const Text = styled.div`
   }
 
   p {
-    margin-bottom: 2.5rem;
     font-size: 20pt;
     font-weight: normal;
     line-height: 1.3;
@@ -78,4 +77,8 @@ export const Thumbnail = styled.div`
   img {
     width: 65%;
   }
+`;
+
+export const AvatarExtended = styled(Avatar)`
+  margin-bottom: 1rem;
 `;
