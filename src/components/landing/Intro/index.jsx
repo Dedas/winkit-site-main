@@ -15,7 +15,7 @@ export const Intro = ({introData = contentfulSegment(2)}, {imageData = contentfu
         <h1>{introData.title}</h1>
         <h4>{documentToReactComponents(JSON.parse(introData.content.raw))}</h4>
         <ButtonWrapper>
-          <Button as={AnchorLink} href="#contact">{introData.button1}</Button>
+          <Button as={AnchorLink} href="#contact" offset="64">{introData.button1}</Button>
           <a href={'https:' + imageData.image.file.url} download target="_blank">
             <Button>{introData.button2}</Button>
           </a>

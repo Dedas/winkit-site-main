@@ -77,7 +77,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.defaultTitle,
-        short_name: 'starter',
+        short_name: 'Winkit-main',
         start_url: '/',
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
