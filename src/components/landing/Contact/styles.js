@@ -91,8 +91,9 @@ export const AvatarExtended = styled(Avatar)`
   margin-bottom: 1rem;
 
   @media (max-width: 960px) {
-    width: 75% !important;
-    height: 75% !important;
+    width: 125px !important;
+    height: 125px !important;
     margin-bottom: 0.5rem;
   }
+
 `;

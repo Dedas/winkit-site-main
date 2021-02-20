@@ -53,12 +53,12 @@ export const Thumbnail = styled.div`
   text-align: center;
   
   @media (max-width: 960px) {
-    width: 75%;
+    width: 175px;
     text-align: center;
     margin-bottom: 2rem;
   }
 
   img {
-    width: 55%;
+    width: 300px;
   }
 `;

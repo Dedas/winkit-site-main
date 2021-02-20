@@ -54,15 +54,15 @@ export const Text = styled.div`
 export const Thumbnail = styled.div`
   flex: 1;
   text-align: center;
-  
+
   @media (max-width: 960px) {
-    width: 75%;
+    width: 175px;
     text-align: center;
     margin-bottom: 2rem;
   }
 
   img {
-    width: 65%;
+    width: 300px;
   }
 `;
 

@@ -14,10 +14,9 @@ export const DetailsWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: column-reverse;
 
   @media (max-width: 960px) {
-    flex-direction: column-reverse;
     padding: 0rem;
   }
 `;
@@ -58,11 +57,13 @@ export const Thumbnail = styled.div`
   text-align: center;
   
   @media (max-width: 960px) {
+    width: 175px;
+    margin-bottom: 1.45rem;
     text-align: center;
-    margin-bottom: 2rem;
   }
 
   img {
-    width: 45%;
+    margin-bottom: 2rem;
+    width: 300px;
   }
 `;

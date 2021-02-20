@@ -13,7 +13,7 @@ export const Contact = ({contactData = contentfulSegment(5)}, {imageData = conte
       <ContactForm />
     </Details>
     <Thumbnail>
-      <AvatarExtended name="Andreas Winkler" size="200px" src={imageData.image.file.url} round={true} alt="Andreas Winkler" />
+      <AvatarExtended name="Andreas Winkler" size="175px" src={imageData.image.file.url} round={true} alt="Andreas Winkler" />
         <Text>
           <h3>Andreas Winkler<br></br>Software developer</h3>
         </Text> 
