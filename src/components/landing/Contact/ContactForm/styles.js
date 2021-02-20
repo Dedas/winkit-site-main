@@ -7,8 +7,8 @@ export const Error = styled.span`
 export const Center = styled.div`
   text-align: left;
 
-  h4 {
-    font-weight: normal;
+  h3 {
+    color: #474747;
   }
 `;
 

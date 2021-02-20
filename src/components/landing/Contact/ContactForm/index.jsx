@@ -39,11 +39,12 @@ export default () => (
         });
         setSubmitting(false);
         setFieldValue('success', true);
-        setTimeout(() => resetForm(), 6000);
+        setTimeout(() => resetForm(), 10000);
       } catch (err) {
         setSubmitting(false);
         setFieldValue('success', false);
 				alert('Something went wrong, please try again!') // eslint-disable-line
+        console.log(err)
       }
     }}
   >
@@ -102,7 +103,7 @@ export default () => (
         {values.success && (
           <InputField>
             <Center>
-              <h4>Your message has been successfully sent, I will get back to you ASAP!</h4>
+              <h3>Message sent! I will get back to you soon! :)</h3>
             </Center>
           </InputField>
         )}
