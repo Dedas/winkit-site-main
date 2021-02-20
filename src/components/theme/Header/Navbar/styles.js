@@ -19,14 +19,15 @@ export const Wrapper = styled.div`
 
 export const Logo = styled.div`
   display: flex;
-  align-items: flex-start;
   margin-left: 1rem;
 
   @media (max-width: 960px) {
+    height: 100%;
     width: 100%;
   }
 
   img {
+    height 100%;
     width: 65%;
     margin-bottom: 0em;
   }
