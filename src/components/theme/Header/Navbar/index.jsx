@@ -2,9 +2,9 @@ import React from 'react';
 import { ContainerNavbar } from 'components/common';
 import NavbarLinks from '../NavbarLinks';
 import { Wrapper, Logo } from './styles';
-import { contentfulNavbar } from 'data/contentful-navbar';
 import Sticky from 'react-sticky-el';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { contentfulImageDataLogo } from 'data/contentful-imagedata-logo';
 
 const stickyStyleCSS = {
   background: "#ffffff",
@@ -15,11 +15,11 @@ const stickyStyleCSS = {
   zIndex: 3
 };
 
-export const Navbar = ({navbarData = contentfulNavbar()}) => (
+export const Navbar = ({imageData = contentfulImageDataLogo()}) => (
   <Sticky stickyStyle={stickyStyleCSS}>
     <Wrapper as={ContainerNavbar}>
         <Logo>
-          <AnchorLink href="#intro"><img src={navbarData.logo.file.url} /></AnchorLink>
+          <AnchorLink href="#intro"><img src={imageData.image.file.url} /></AnchorLink>
         </Logo> 
       <NavbarLinks desktop />
     </Wrapper>

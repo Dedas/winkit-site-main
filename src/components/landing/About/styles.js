@@ -57,7 +57,7 @@ export const Thumbnail = styled.div`
   text-align: center;
   
   @media (max-width: 960px) {
-    width: 175px;
+    width: 200px;
     margin-bottom: 1.45rem;
     text-align: center;
   }

@@ -26,6 +26,27 @@ export const Flex = styled.div`
   }
 `;
 
+export const Logo = styled.div`
+  display: flex;
+  margin-bottom: 0.5rem;
+
+  @media (max-width: 960px) {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  img {
+    height 100%;
+    width: 120px;
+    margin-bottom: 0em;
+  }
+
+  a {
+    display: inline-flex;
+  }
+`;
+
 export const Links = styled.div`
   display: flex;
   align-items: center;

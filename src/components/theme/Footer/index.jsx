@@ -1,18 +1,18 @@
 import React from 'react';
 import { Container } from 'components/common';
-import { Wrapper, Flex, Links, Details } from './styles';
-import {
-  defaultTitle,
-  author,
-  contact,
-} from 'data/config';
+import { Wrapper, Flex, Links, Details, Logo } from './styles';
+import { defaultTitle, author, contact } from 'data/config';
 import { contentfulSocial } from 'data/contentful-social';
+import { contentfulImageDataLogo } from 'data/contentful-imagedata-logo';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-export const Footer = ({ socialData = contentfulSocial() }) => (
+export const Footer = ({ socialData = contentfulSocial() }, { imageData = contentfulImageDataLogo()}) => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
-        <h2>{defaultTitle}</h2>
+        <Logo>
+          <AnchorLink href="#intro"><img src={imageData.image.file.url} /></AnchorLink>
+        </Logo>
         <span className="desktop">
           © All rights are reserved | {new Date().getFullYear()} | Made by {" "}
           <a href={"mailto:" + contact.email}>{author}</a>
