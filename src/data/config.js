@@ -4,7 +4,8 @@ module.exports = {
   author: 'Andreas Winkler',
   url: 'https://winkit.se',
   legalName: 'Winkit',
-  defaultDescription: 'Information Systems student and Software Developer',
+  shortname: 'Winkit',
+  defaultDescription: 'Winkit - Andreas Winkler portfolio page',
   socialLinks: {
     twitter: 'https://twitter.com/winkit9',
     github: 'https://github.com/Dedas',
@@ -14,8 +15,8 @@ module.exports = {
     google: '',
   },
   googleAnalyticsID: '',
-  themeColor: '#6b63ff',
-  backgroundColor: '#6b63ff',
+  themeColor: '#F0EEFE',
+  backgroundColor: '#FCFCFC',
   social: {
     facebook: 'appId',
     twitter: '@winkit9',
@@ -30,7 +31,6 @@ module.exports = {
     email: 'andreas.winkler@winkit.se',
     phone: '+46707229491',
   },
-  foundingDate: '2021',
-  contentfulSpaceId: 'qqg8xpr0nyrn'
+  foundingDate: '2021'
 }
 

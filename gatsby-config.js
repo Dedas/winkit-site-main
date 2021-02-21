@@ -38,9 +38,9 @@ module.exports = {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "UA-100881141-1",
+        trackingId: process.env.GATSBY_PORTFOLIO_GOOGLE_ANALYTICS_TRACKING_ID,
         // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
+        head: true,
         // Avoids sending pageview hits from custom paths
         exclude: ["/preview/**", "/do-not-track/me/too/"],
         // Delays sending pageview hits on route update (in milliseconds)
@@ -56,32 +56,15 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-favicon',
-      options: {
-        logo: config.logo,
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false,
-        },
-      },
-    },
-    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.defaultTitle,
-        short_name: 'Winkit-main',
+        description: "test",
+        short_name: config.shortname,
         start_url: '/',
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: 'minimal-ui',
+        display: 'browser',
         icon: config.logo,
       },
     },
@@ -89,8 +72,7 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: config.contentfulSpaceId,
-        // Learn about environment variables: https://gatsby.dev/env-vars
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
