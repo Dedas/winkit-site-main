@@ -44,7 +44,6 @@ export default () => (
         setSubmitting(false);
         setFieldValue('success', false);
 				alert('Something went wrong, please try again!') // eslint-disable-line
-        console.log(err)
       }
     }}
   >
@@ -103,7 +102,7 @@ export default () => (
         {values.success && (
           <InputField>
             <Center>
-              <h3>Message sent! I will get back to you soon! :)</h3>
+              <p>Message sent! I will get back to you soon! :)</p>
             </Center>
           </InputField>
         )}
