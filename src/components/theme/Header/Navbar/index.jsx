@@ -7,10 +7,10 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { contentfulImageDataLogo } from 'data/contentful-imagedata-logo';
 
 const stickyStyleCSS = {
-  background: "#ffffff",
+  background: "#FCFCFC",
   borderBottom: "solid",
   borderWidth: "thin",
-  borderColor: "#ffffff",
+  borderColor: "#FCFCFC",
   boxShadow: "0 1px 6px 0 rgba(0, 0, 0, 0.11)",
   zIndex: 3
 };
