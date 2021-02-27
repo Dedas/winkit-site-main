@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+  background-color: #inherit;
 
   padding: 1rem 0 1rem 0;
   display: flex;
@@ -13,7 +14,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 
   a {
-    color: #212121;
+    color: inherit;
   }
 `;
 

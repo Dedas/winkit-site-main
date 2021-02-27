@@ -5,10 +5,6 @@ export const Wrapper = styled.div`
   padding-bottom: 4rem;
   padding-left: 0rem;
   padding-right: 0rem;
-
-  h3 {
-    color: #474747;
-  }
 `;
 
 export const Grid = styled.div`
@@ -30,15 +26,16 @@ export const Grid = styled.div`
 export const Item = styled.div`
   width: 100%;
   height: 100%;
+  color: inherit;
   overflow: hidden;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
 
   h4 {
-    color: #212121;
+    color: inherit;
   }
 
   p {
-    color: #474747;
+    color: inherit;
   }
 `;
 
@@ -61,7 +58,7 @@ export const Stats = styled.div`
     }
 
     span {
-      color: #000;
+      color: inherit;
       margin-left: 0.5rem;
     }
   }

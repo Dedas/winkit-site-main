@@ -12,8 +12,9 @@ export const Button = styled.button`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #fff;
-  background: #0074d9;
+  color: inherit;
+  background: #ccdbfd;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
 
   &:focus {
     outline: none;

@@ -12,8 +12,11 @@ export const Intro = ({introData = contentfulSegment(2)}, {imageData = contentfu
     <Header />
     <IntroWrapper as={Container}>
       <Details>
-        <h1>{introData.title}</h1>
-        <h4>{documentToReactComponents(JSON.parse(introData.content.raw))}</h4>
+        {/*<h1>{introData.title}</h1>
+        <h4>{documentToReactComponents(JSON.parse(introData.content.raw))}</h4>*/}
+        <h1>Andreas Winkler</h1>
+        <h4>/Software developer</h4>
+        <h4>/IT Consultant</h4>
         <ButtonWrapper>
           <Button as={AnchorLink} href="#contact" offset="64">{introData.button1}</Button>
           {/*<a href={'https:' + imageData.image.file.url} download target="_blank">

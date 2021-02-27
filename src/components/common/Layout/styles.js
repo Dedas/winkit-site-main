@@ -603,8 +603,10 @@ export const Global = createGlobalStyle`
       margin: 0;
       padding: 0;
       font-family: 'Roboto', Helvetica, sans-serif;
-      color: hsla(0, 0%, 0%, 0.8);
-      background-color: #fcfcfc;
+      /*color: hsla(0, 0%, 0%, 0.8);*/
+      /*background-color: #fcfcfc;*/
+      color: #111111;
+      background-color: white;
       font-weight: normal;
       word-wrap: break-word;
       font-kerning: normal;
