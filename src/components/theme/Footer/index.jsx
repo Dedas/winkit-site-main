@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'components/common';
 import { Wrapper, Flex, Links, Details, Logo } from './styles';
-import { defaultTitle, author, contact } from 'data/config';
+import { author, contact } from 'data/config';
 import { contentfulSocial } from 'data/contentful-social';
 import { contentfulImageDataLogo } from 'data/contentful-imagedata-logo';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -26,7 +26,7 @@ export const Footer = ({ socialData = contentfulSocial() }, { imageData = conten
         {socialData.edges.map(edge => {
           return (
             <a key={edge.node.name} href={edge.node.url} target="_blank" rel="noopener noreferrer" aria-label={`follow me on ${edge.node.name}`}>
-              <img width="24" src={edge.node.logo.file.url} alt={edge.node.name} />
+              <img width="24" src={edge.node.logo.file.url} alt={edge.node.name} fill={"red"} />
             </a>
           )}
         )}  

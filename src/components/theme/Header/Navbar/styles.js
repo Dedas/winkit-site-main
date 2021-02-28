@@ -6,16 +6,11 @@ export const Wrapper = styled.div`
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  background-color: #inherit;
 
   padding: 1rem 0 1rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  a {
-    color: inherit;
-  }
 `;
 
 export const Logo = styled.div`

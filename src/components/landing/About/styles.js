@@ -2,7 +2,7 @@ import { contentfulBackground } from 'data/contentful-segment';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 2rem 0rem;
+  padding: 2rem 0rem 16rem 0rem;
   /* background-image: url(${() => contentfulBackground()}); */
   background-size: contain;
   background-position: left top;
@@ -33,23 +33,14 @@ export const Text = styled.div`
   h1 {
     margin-bottom: 1.45rem;
     font-size: 26pt;
-    color: #212121;
-  }
-
-  h3 {
-    color: #474747;
   }
 
   p {
     font-size: 1.2rem;
     font-weight: normal;
     line-height: 1.3;
-    color: #474747;
   }
 
-  a {
-    color: #0074d9;
-  }
 `;
 
 export const Thumbnail = styled.div`

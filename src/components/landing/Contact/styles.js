@@ -31,18 +31,12 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 1.45rem;
     font-size: 26pt;
-    color: #212121;
-  }
-
-  h3 {
-    color: #474747;
   }
 
   p {
     font-size: 1.2rem;
     font-weight: normal;
     line-height: 1.3;
-    color: #474747;
   }
 `;
 
@@ -57,18 +51,12 @@ export const Text = styled.div`
   h1 {
     margin-bottom: 1.45rem;
     font-size: 26pt;
-    color: #212121;
-  }
-
-  h3 {
-    color: #474747;
   }
 
   p {
     font-size: 1.2rem;
     font-weight: normal;
     line-height: 1.3;
-    color: #474747;
   }
 `;
 
@@ -80,6 +68,14 @@ export const Thumbnail = styled.div`
     width: 75%;
     text-align: center;
     margin-bottom: 2rem;
+  }
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    font-weight: normal;
   }
 
   img {

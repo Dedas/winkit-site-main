@@ -26,17 +26,9 @@ export const Grid = styled.div`
 export const Item = styled.div`
   width: 100%;
   height: 100%;
-  color: inherit;
   overflow: hidden;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
-
-  h4 {
-    color: inherit;
-  }
-
-  p {
-    color: inherit;
-  }
+  color: #111111;
 `;
 
 export const Content = styled.div`

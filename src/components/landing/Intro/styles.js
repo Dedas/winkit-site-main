@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
   padding-bottom: 2rem;
   /*background-image: url(${() => contentfulBackground(2)});*/
   /*background-image: url(test.svg);*/
-  background-color: inherit;
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
@@ -38,7 +37,6 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 1rem;
     font-size: 64pt;
-    color: inherit;
 
     @media (max-width: 680px) {
       font-size: 30pt;
@@ -53,7 +51,6 @@ export const Details = styled.div`
     margin-bottom: 0.5rem;
     font-size: 24pt;
     font-weight: bold;
-    color: inherit;
 
     @media (max-width: 680px) {
       font-size: 26pt;
@@ -65,7 +62,7 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   width: 250px;
-  margin-top: 1rem;
+  margin-top: 1.1rem;
 `;
 
 export const Thumbnail = styled.div`
