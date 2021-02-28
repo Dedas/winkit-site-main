@@ -3,11 +3,10 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   margin-right:2rem;
   font-size: 1.38316rem;
-  color: #212121;
-  font-weight: normal;
+  font-weight: bold;
 
   a {
-    text-decoration: none;
+    color: #111111;
   }
 
   ${({ desktop }) =>
@@ -38,7 +37,7 @@ export const Wrapper = styled.div`
 					line-height: 3rem;
 					text-align: center;
 
-					color: #212121;
+					color: #111111;
 
 					&:last-child {
 							margin-bottom: unset;

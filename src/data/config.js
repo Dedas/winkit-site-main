@@ -15,8 +15,8 @@ module.exports = {
     google: '',
   },
   googleAnalyticsID: '',
-  themeColor: '#F0EEFE',
-  backgroundColor: '#FCFCFC',
+  themeColor: '#CDDAFC',
+  backgroundColor: '#FFFFFF',
   social: {
     facebook: 'appId',
     twitter: '@winkit9',

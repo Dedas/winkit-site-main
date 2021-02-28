@@ -2,15 +2,17 @@ import { contentfulBackground } from 'data/contentful-segment';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 24rem 0 4rem 0;
+  padding: 14rem 0 4rem 0;
 
-  background-image: url(${() => contentfulBackground(7)});
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
+  /*background-image: url(${() => contentfulBackground(7)});*/
+  background-image: url("drawing.svg");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: repeat-x;
 
-  @media (max-width: 1960px) {
-    padding: 14rem 0 4rem;
+  @media (max-width: 680px) {
+    background-size: cover;
+    padding: 16rem 0 4rem 0;
   }
 `;
 
@@ -30,7 +32,7 @@ export const Logo = styled.div`
   display: flex;
   margin-bottom: 0.5rem;
 
-  @media (max-width: 960px) {
+  @media (max-width: 680px) {
     height: 100%;
     width: 100%;
     justify-content: center;
@@ -56,6 +58,9 @@ export const Links = styled.div`
 
     img {
       margin: 0;
+      /* Changes color of SVG to black */
+      /*filter: invert(0%) sepia(5%) saturate(100%) hue-rotate(317deg) brightness(0%) contrast(87%);*/
+      mix-blend-mode: color-dodge;
     }
 
     &:first-child,
@@ -70,6 +75,10 @@ export const Details = styled.div`
     display: none;
   }
 
+  a {
+    color: white;
+  }
+
   @media (max-width: 680px) {
     margin-bottom: 2rem;
     .desktop {
@@ -79,13 +88,5 @@ export const Details = styled.div`
     .mobile {
       display:block;
     }
-  }
-
-  a {
-    color: #6b63ff;
-  }
-
-  a:visited {
-    color: #6b63ff;
   }
 `;

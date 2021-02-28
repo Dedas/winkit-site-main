@@ -18,7 +18,7 @@ export const Intro = ({introData = contentfulSegment(2)}, {imageData = contentfu
           <Button as={AnchorLink} href="#contact" offset="64">{introData.button1}</Button>
           {/*<a href={'https:' + imageData.image.file.url} download target="_blank">
             <Button>{introData.button2}</Button>
-          </a>*/}
+          </a>*/} 
         </ButtonWrapper>
       </Details>
       <Thumbnail>

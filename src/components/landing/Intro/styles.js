@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding-bottom: 2rem;
-  background-image: url(${() => contentfulBackground(2)});
+  /*background-image: url(${() => contentfulBackground(2)});*/
+  /*background-image: url(test.svg);*/
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
@@ -35,8 +36,7 @@ export const Details = styled.div`
 
   h1 {
     margin-bottom: 1rem;
-    font-size: 36pt;
-    color: #212121;
+    font-size: 64pt;
 
     @media (max-width: 680px) {
       font-size: 30pt;
@@ -48,10 +48,9 @@ export const Details = styled.div`
   }
 
   h4 {
-    margin-bottom: 2.7rem;
-    font-size: 32pt;
-    font-weight: normal;
-    color: #474747;
+    margin-bottom: 0.5rem;
+    font-size: 24pt;
+    font-weight: bold;
 
     @media (max-width: 680px) {
       font-size: 26pt;
@@ -63,6 +62,7 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   width: 250px;
+  margin-top: 1.1rem;
 `;
 
 export const Thumbnail = styled.div`

@@ -12,8 +12,10 @@ export const Button = styled.button`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #fff;
-  background: #0074d9;
+  color: inherit;
+  background: #6A95F9;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
+  color: white;
 
   &:focus {
     outline: none;
@@ -23,9 +25,15 @@ export const Button = styled.button`
     background: gray;
   }
 
+  &:hover {opacity: 0.8}
+
+  &:active {
+    box-shadow: 0 0px 0px 0px gray;
+  }
+
   ${({ secondary }) =>
     secondary &&
     `
-		background: #001F3F;
+		background: #6A95F9;
 	`}
 `;

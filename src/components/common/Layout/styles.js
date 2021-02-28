@@ -40,6 +40,8 @@ export const Global = createGlobalStyle`
     a {
       background-color: transparent;
       -webkit-text-decoration-skip: objects;
+      color: #0074d9;
+      text-decoration: none;
     }
     a:active,
     a:hover {
@@ -205,7 +207,7 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 0rem;
     }
     h1 {
       margin-left: 0;
@@ -603,8 +605,8 @@ export const Global = createGlobalStyle`
       margin: 0;
       padding: 0;
       font-family: 'Roboto', Helvetica, sans-serif;
-      color: hsla(0, 0%, 0%, 0.8);
-      background-color: #fcfcfc;
+      color: #111111;
+      background-color: white;
       font-weight: normal;
       word-wrap: break-word;
       font-kerning: normal;
@@ -612,10 +614,6 @@ export const Global = createGlobalStyle`
       -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       font-feature-settings: 'kern', 'liga', 'clig', 'calt';
-    }
-
-    a {
-      text-decoration: none;
     }
 
     input, select, textarea, button {
