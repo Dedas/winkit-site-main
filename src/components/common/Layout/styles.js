@@ -60,6 +60,10 @@ export const Global = createGlobalStyle`
     dfn {
       font-style: italic;
     }
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
     mark {
       background-color: #ff0;
       color: #000;
@@ -204,10 +208,6 @@ export const Global = createGlobalStyle`
       padding-right: 0;
       padding-top: 0;
       margin-bottom: 0rem;
-    }
-    h1 {
-      font-size: 2em;
-      margin: 0.67em 0;
     }
     h1 {
       margin-left: 0;
@@ -362,7 +362,6 @@ export const Global = createGlobalStyle`
       padding-right: 0;
       padding-top: 0;
       margin-bottom: 1.45rem;
-      color: #333333;
     }
     figure {
       margin-left: 0;

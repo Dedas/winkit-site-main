@@ -40,6 +40,7 @@
     "sharp": "^0.27.1",
     "styled-components": "^5.2.1",
     "vercel": "^21.2.3",
+    "webextension-store-meta": "^1.0.3",
     "yup": "^0.32.8"
   },
   "keywords": [
