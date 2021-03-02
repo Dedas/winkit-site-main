@@ -2,9 +2,13 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
   padding-left: 0rem;
   padding-right: 0rem;
+
+  @media (max-width: 960px) {
+    padding-bottom: 4rem;
+  }
 `;
 
 export const Grid = styled.div`

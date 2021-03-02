@@ -1,9 +1,10 @@
 import { contentfulBackground } from 'data/contentful-segment';
 import styled from 'styled-components';
+import Slider from "react-slick";
 
 export const Wrapper = styled.div`
   padding: 2rem 0rem;
-  /* background-image: url(${() => contentfulBackground(3)}); */
+  /* background-image: url(${() => contentfulBackground(11)}); */
   background-size: contain;
   background-position: left top;
   background-repeat: no-repeat;
@@ -12,14 +13,51 @@ export const Wrapper = styled.div`
 export const DetailsWrapper = styled.div`
   padding: 4rem 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  align-items: center;
 
   @media (max-width: 960px) {
     flex-direction: column-reverse;
-    padding: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
   }
+`;
+
+export const SlideWrapper = styled.div`
+  flex: 1;
+  flex-direction: column;
+  width: 50%;
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+`;
+
+export const StyledSlider = styled(Slider)`
+  /* Remove accessibility black outline */
+  *,*:focus,*:hover{
+    outline:none;
+  }
+
+  h3 {
+    text-align: left;
+  }
+
+  h4 {
+    text-align: left;
+    margin-bottom: 1.45rem;
+  }
+
+
+  p {
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+`;
+
+export const RichTextWrapper = styled.div`
+  margin-bottom: 1.45rem;
 `;
 
 export const Text = styled.div`

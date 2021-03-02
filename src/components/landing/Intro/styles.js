@@ -60,9 +60,12 @@ export const Details = styled.div`
 
 export const ButtonWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
-  width: 250px;
+  justify-content: flex-start;
   margin-top: 1.1rem;
+
+  a:nth-child(2) {
+    margin-left: 1rem;
+  }
 `;
 
 export const Thumbnail = styled.div`

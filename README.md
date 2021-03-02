@@ -15,3 +15,5 @@ Background: #FFFFFF
 Complementary: #CDDAFC
 Highlight: #7192F6
 Links: #0074d9
+
+Illustrations by unDraw: https://undraw.co/

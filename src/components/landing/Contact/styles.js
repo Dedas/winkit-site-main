@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import Avatar from 'react-avatar';
 
 export const Wrapper = styled.div`
-  padding: 2rem 0rem;
+  padding: 6rem 0rem 4rem 0rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row-reverse;
 
   background-image: url(${() => contentfulBackground(4)});
   background-size: contain;
@@ -15,7 +16,7 @@ export const Wrapper = styled.div`
 
   @media (max-width: 960px) {
     flex-direction: column;
-    padding-bottom: 0rem;
+    padding: 2rem 0rem 0rem 0rem;
   }
 `;
 
