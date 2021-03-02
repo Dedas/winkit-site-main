@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Avatar from 'react-avatar';
 
 export const Wrapper = styled.div`
-  padding: 6rem 0rem 4rem 0rem;
+  padding: 6rem 0rem 6rem 0rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

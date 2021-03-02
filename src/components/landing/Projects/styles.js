@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding-top: 2rem;
-  padding-bottom: 6rem;
+  padding-bottom: 7rem;
   padding-left: 0rem;
   padding-right: 0rem;
 
