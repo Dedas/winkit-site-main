@@ -28,9 +28,15 @@ export const SlideWrapper = styled.div`
   flex: 1;
   flex-direction: column;
   width: 50%;
+  text-align: center;
+
+  padding-left: 20%;
+  padding-right: 20%;
 
   @media (max-width: 960px) {
     width: 100%;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 `;
 
@@ -48,7 +54,6 @@ export const StyledSlider = styled(Slider)`
     text-align: left;
     margin-bottom: 1.45rem;
   }
-
 
   p {
     text-align: left;

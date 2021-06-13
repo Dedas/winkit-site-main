@@ -9,14 +9,14 @@ import "slick-carousel/slick/slick-theme.css";
 
 var settings = {
   dots: true,
-  infinite: false,
+  infinite: true,
   speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
   centerMode: false,
   variableWidth: false,
   adaptiveHeight: false,
-  centerPadding: '50px',
+  centerPadding: '0px',
   autoplay: true,
   autoplaySpeed: 10000,
   arrows: false,
@@ -41,51 +41,45 @@ export const Mentions = ({mentionsData = contentfulSegment(8)}, {slidesData = sl
       <SlideWrapper>
         <Text>
           <h1>{mentionsData.title}</h1>
-          <h3># {slidesData[0].type} of <a href={slidesData[0].projectLink}>{slidesData[0].project}</a> project</h3>
-          <h4>Source: <a href={slidesData[0].reviewLink}>{slidesData[0].reviewSource}</a></h4>
         </Text>
         <StyledSlider {...settings}>
           <Text>
-            {/* When I add more mentions from different sources
             <h3># {slidesData[0].type} of <a href={slidesData[0].projectLink}>{slidesData[0].project}</a> project</h3>
-            */}
+            <h4>Source: <a href={slidesData[0].reviewLink}>{slidesData[0].reviewSource}</a></h4>
             <RichTextWrapper>
               {documentToReactComponents(JSON.parse(slidesData[0].content.raw))}
             </RichTextWrapper>
             <h4>/{slidesData[0].reviewAuthor}</h4>
           </Text>
           <Text>
-            {/* When I add more mentions from different sources
-            <h3># {slidesData[0].type} of <a href={slidesData[0].projectLink}>{slidesData[0].project}</a> project</h3>
-            */}
             <RichTextWrapper>
+              <h3># {slidesData[1].type} of <a href={slidesData[1].projectLink}>{slidesData[1].project}</a> project</h3>
+              <h4>Source: <a href={slidesData[1].reviewLink}>{slidesData[1].reviewSource}</a></h4>
               {documentToReactComponents(JSON.parse(slidesData[1].content.raw))}
             </RichTextWrapper>
             <h4>/{slidesData[1].reviewAuthor}</h4>
           </Text>
           <Text>
-            {/* When I add more mentions from different sources
-            <h3># {slidesData[0].type} of <a href={slidesData[0].projectLink}>{slidesData[0].project}</a> project</h3>
-            */}
             <RichTextWrapper>
+              <h3># {slidesData[2].type} of <a href={slidesData[2].projectLink}>{slidesData[2].project}</a> project</h3>
+              <h4>Source: <a href={slidesData[2].reviewLink}>{slidesData[2].reviewSource}</a></h4>
               {documentToReactComponents(JSON.parse(slidesData[2].content.raw))}
             </RichTextWrapper>
             <h4>/{slidesData[2].reviewAuthor}</h4>
           </Text>
           <Text>
-            {/* When I add more mentions from different sources
-            <h3># {slidesData[0].type} of <a href={slidesData[0].projectLink}>{slidesData[0].project}</a> project</h3>
-            */}
             <RichTextWrapper>
+              <h3># {slidesData[3].type} of <a href={slidesData[3].projectLink}>{slidesData[3].project}</a> project</h3>
+              <h4>Source: <a href={slidesData[3].reviewLink}>{slidesData[3].reviewSource}</a></h4>
               {documentToReactComponents(JSON.parse(slidesData[3].content.raw))}
             </RichTextWrapper>
             <h4>/{slidesData[3].reviewAuthor}</h4>
           </Text>
         </StyledSlider>                
       </SlideWrapper>
-      <Thumbnail>
+      {/*<Thumbnail>
         <img src={mentionsData.thumbnail.file.url} alt={mentionsData.thumbnailAlt} />
-      </Thumbnail>
+      </Thumbnail>*/}
     </DetailsWrapper>
   </Wrapper>
 );
