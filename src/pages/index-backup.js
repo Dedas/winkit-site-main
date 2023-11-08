@@ -4,6 +4,8 @@ import { Intro, Mentions, Who, Why, Contact, Projects, About, Maintenance } from
 
 const Index = () => {
   return (
-  <Maintenance />
+  <Layout>
+    <Maintenance />
+  </Layout>
   )}
 export default Index;

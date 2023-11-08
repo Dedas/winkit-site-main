@@ -5,3 +5,4 @@ export * from './Contact';
 export * from './Projects';
 export * from './Mentions';
 export * from './About';
+export * from './Maintenance';
